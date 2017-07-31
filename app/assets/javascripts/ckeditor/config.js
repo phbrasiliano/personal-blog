@@ -1,6 +1,6 @@
 CKEDITOR.editorConfig = function(config) {
   config.language = 'en';
-  config.width = '700';
+  //config.width = '700';
   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
   config.filebrowserImageBrowseLinkUrl = "/ckeditor/pictures";
   config.filebrowserImageBrowseUrl = "/ckeditor/pictures";
@@ -19,7 +19,7 @@ CKEDITOR.editorConfig = function(config) {
       items: ['Link', 'Unlink']
     }, '/', {
       name: 'styles',
-      items: ['Styles', 'Format', 'Font', 'FontSize']
+      items: ['Styles', 'Format']
     }, {
       name: 'colors',
       items: ['TextColor', 'BGColor']
