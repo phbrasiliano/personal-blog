@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   end
 
   root "posts#index"
+
+  get '/sobre', to: 'pages#sobre'
 end
