@@ -29,6 +29,7 @@ gem 'devise'
 gem 'ckeditor'
 gem 'rails-i18n'
 gem 'carrierwave'
+gem 'mini_magick'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
