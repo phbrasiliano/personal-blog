@@ -39,10 +39,13 @@ a {
 	padding: 7em 0 0 0;
 	border-right: 1px solid #d6dce0;
 	#logo {
-		width: 40px;
 		position: absolute;
 		right: 3em;
 		top: 3em;
+		img {
+			max-width: 70px;
+			max-height: 70px;
+		}
 	}
 	ul {
 		list-style: none;
