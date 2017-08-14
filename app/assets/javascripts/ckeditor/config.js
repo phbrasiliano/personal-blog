@@ -31,7 +31,6 @@ CKEDITOR.editorConfig = function(config) {
   ];
   config.toolbar = 'Pure';
   config.disableNativeSpellChecker = false;
-  config.removePlugins = '';
-  
+  config.removePlugins = 'liststyle,tabletools,scayt,menubutton,contextmenu';
   return true;
 };

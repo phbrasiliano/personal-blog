@@ -27,11 +27,11 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
-gem 'ckeditor'
+gem 'ckeditor',  '4.2.3'
 gem 'rails-i18n'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog',                     '1.40.0'
+gem 'fog',            '1.40.0'
 gem 'friendly_id', '~> 5.1.0'
 gem 'faker',          '1.7.3'
 # Use Redis adapter to run Action Cable in production
