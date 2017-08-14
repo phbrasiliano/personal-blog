@@ -1,0 +1,8 @@
+<?php
+
+function ckeditor_browser_context_menu_editor_js_settings_alter(array &$settings) {
+  foreach($settings['editor']['formats'] as &$formatType) {
+    $formatType['editorSettings']['removePlugins'] = 'contextmenu,tabletools,tableresize';
+    $formatType['editorSettings']['disableNativeSpellChecker'] = false;
+  }
+}

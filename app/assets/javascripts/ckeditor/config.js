@@ -1,14 +1,12 @@
 CKEDITOR.editorConfig = function(config) {
   config.language = 'en';
   //config.width = '700';
+
   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
   config.filebrowserImageBrowseLinkUrl = "/ckeditor/pictures";
   config.filebrowserImageBrowseUrl = "/ckeditor/pictures";
   config.filebrowserImageUploadUrl = "/ckeditor/pictures";
   config.filebrowserUploadUrl = "/ckeditor/attachment_files";
-  
-  config.disableNativeSpellChecker = false;
-  config.browserContextMenuOnCtrl = false;
 
   config.toolbar_Pure = [
     '/', {
@@ -32,5 +30,8 @@ CKEDITOR.editorConfig = function(config) {
     }
   ];
   config.toolbar = 'Pure';
+  config.disableNativeSpellChecker = false;
+  config.removePlugins = '';
+  
   return true;
 };
