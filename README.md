@@ -9,3 +9,5 @@ $ rails server
 ```
 the blog will be available to be seen on the address http://localhost:3000/ on any browser.
 
+Right now the blog should register new posts, upload pictures, let the admin log in. New features will be implemented soon.
+
