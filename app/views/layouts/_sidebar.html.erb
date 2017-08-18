@@ -1,0 +1,21 @@
+<div id="logo">
+  <%= link_to root_path do %>
+    <%= image_tag "logo.png" %>
+  <% end %>
+</div>
+
+<ul>
+  <li class="category">Website</li>
+  <li><%= link_to "Blog", root_path %></li>
+  <li><%= link_to "Sobre Mim", sobre_path %></li>
+</ul>
+
+<ul>
+  <li class="category">Social</li>
+  <li><a href="https://twitter.com/biabrasiliano">Twitter</a></li>
+  <li><a href="https://www.instagram.com/biabrasiliano/">Instagram</a></li>
+  <li><a href="mailto:beatriz.brasiliano@gmail.com ">Email</a></li>
+</ul>
+<% if !user_signed_in? %>
+  <p class="sign_in"><%= link_to "Login do Administrador", new_user_session_path %> </p>
+<% end %>

@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,56 +13,18 @@
   </head>
 
   <body>
-    <div id="sidebar">
-      <div id="logo">
-        <%= link_to root_path do %>
-          <%= image_tag "logo.png" %>
-        <% end %>
+    <%= render "layouts/header" %>
+    <div class="row">
+      <div class="col-3" id="sidebar">
+        <%= render "layouts/sidebar" %>
       </div>
 
-      <ul>
-        <li class="category">Website</li>
-        <li><%= link_to "Blog", root_path %></li>
-        <li><%= link_to "Sobre Mim", sobre_path %></li>
-      </ul>
-
-      <ul>
-        <li class="category">Social</li>
-        <li><a href="https://twitter.com/biabrasiliano">Twitter</a></li>
-        <li><a href="https://www.instagram.com/biabrasiliano/">Instagram</a></li>
-        <li><a href="mailto:beatriz.brasiliano@gmail.com ">Email</a></li>
-      </ul>
-      <% if !user_signed_in? %>
-        <p class="sign_in"><%= link_to "Login do Administrador", new_user_session_path %> </p>
-      <% end %>
-    </div>
-
-    <div id="main_content">
-      <div id="header">
-        
-        <% if current_page?(root_path) %>
-          <p>Todos os Posts</p>
-        <% elsif current_page?(sobre_path) %>
-          <p>Sobre mim</p>
-        <% else %>
-          <%= link_to "Voltar para lista de posts", root_path %>
-        <% end %>
-        
-        <% if user_signed_in? %>
-          <div class="buttons">
-            <%= link_to "Novo Post", new_post_path, :class => "button" %>
-            <%= link_to "Log Out", destroy_user_session_path, :class => "button", method: :delete %>﻿
-          </div>
-        <% end %>
+      <div class="col-6" id="main_content">
+        <%= yield %>
       </div>
-      
 
-      <% flash.each do |name, msg| %>
-        <%= content_tag(:div, msg, class: "alert") %>
-      <% end %>
-
-      <%= yield %>
+      <div class= "col-3" id="other_bar">
+      </div>
     </div>
-
   </body>
 </html>
