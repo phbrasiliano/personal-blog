@@ -29,8 +29,10 @@ CKEDITOR.editorConfig = function(config) {
       items: ['Image', 'Table', 'HorizontalRule', 'PageBreak']
     }
   ];
+  config.height = 600;
   config.toolbar = 'Pure';
   config.disableNativeSpellChecker = false;
   config.removePlugins = 'liststyle,tabletools,scayt,menubutton,contextmenu';
+  config.disallowedContent = 'img{width,height}';
   return true;
 };
