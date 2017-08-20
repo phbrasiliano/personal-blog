@@ -2,6 +2,11 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
+    <meta property="fb:app_id" content="1606558576090160">
+    <meta property="og:title" content=<%= yield(:title) %>/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:site_name" content="Une Fille"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
 
@@ -11,6 +16,8 @@
     <%= favicon_link_tag 'favicon.ico' %>
 
   </head>
+
+  <%= render "layouts/facebook-comments" %>
 
   <body>
     <%= render "layouts/header" %>
@@ -25,9 +32,7 @@
 
       <div class= "col-4" id="other_bar">
       </div>
-    </div>
-
-    
+    </div>  
     
   </body>
 </html>
