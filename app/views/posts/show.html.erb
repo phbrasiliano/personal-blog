@@ -1,4 +1,5 @@
 <% provide(:title, @post.title) %>
+<% provide(:thumb, retrieve_photo(@post)) %>
 <div id="post_content">
   <h1 class="title">
     <%= @post.title %>

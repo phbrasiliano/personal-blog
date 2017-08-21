@@ -3,9 +3,10 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <meta property="fb:app_id" content="1606558576090160">
-    <meta property="og:title" content=<%= yield(:title) %>/>
+    <meta property="og:title" content="<%= yield(:title) %>"/>
     <meta property="og:type" content="article"/>
     <meta property="og:site_name" content="Une Fille"/>
+    <meta property="og:image" content="<%= yield(:thumb) %>"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
