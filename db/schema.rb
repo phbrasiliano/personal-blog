@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170808111642) do
+ActiveRecord::Schema.define(version: 20170821122357) do
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -48,9 +48,10 @@ ActiveRecord::Schema.define(version: 20170808111642) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "slug"
+    t.string   "description"
     t.index ["slug"], name: "index_posts_on_slug", unique: true
   end
 
