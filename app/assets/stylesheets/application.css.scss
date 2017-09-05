@@ -15,5 +15,138 @@
  */
 
 @import 'normalize';
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*grid view*/
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+.filler {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .filler {display: block;}
+}
+
+body {
+  background-color: #e2e0de;
+}
+
+.logo{
+  padding: 1px;
+  max-height: 150px;
+}
+
+.menu{
+  background-color: #009900;
+  color: white;
+  
+  .nav-bar {
+    padding: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      text-align: center;
+      padding: 1em;
+      text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+      background-color: #111;
+  }
+
+  .dev-menu {
+    float: right;
+    margin-top: -6px;
+    .button {
+      font-size: .8em;
+      margin-left: .5em;
+      border-radius: 1.5em;
+      &:hover {
+        border: 1px solid #33acb7;
+      }
+    }
+  }
+}
+
+.button {
+  outline: none;
+  background: transparent;
+  border: 1px solid #d6dce0;
+  padding: .5em 1.5em;
+  &:hover {
+    border: 1px solid #33acb7;
+    color: #33acb7;
+    a {
+      color: #33acb7 !important;
+    }
+  }
+}
+
+.alert {
+  position: absolute;
+  padding-left: 15%
+}
+
+.sidebar {
+  ul {
+    list-style: none;
+    .category {
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  padding: 1em;
+}

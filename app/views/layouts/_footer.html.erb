@@ -1,3 +1,8 @@
-<div id="footer">
-  <p> Developed by Phellipe Brasiliano </p>
+<div class="row footer">
+  <p> Developed by Phellipe Brasiliano
+  <% if !user_signed_in? %>
+    <%= " - " %>
+    <%= link_to "Login do Administrador", new_user_session_path %> 
+  <% end %>
+  </p>
 </div>

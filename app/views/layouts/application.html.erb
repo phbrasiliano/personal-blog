@@ -10,7 +10,8 @@
     <meta property="og:description" content="<%= yield(:description) %>"/>
     <meta property="og:url" content="<%= "https://unefille.com.br" + yield(:post_path) %>"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -23,19 +24,22 @@
   <%= render "layouts/facebook-comments" %>
 
   <body>
+
     <%= render "layouts/header" %>
-    <div class="row">
-      <div class="col-2" id="sidebar">
-        <%= render "layouts/sidebar" %>
-      </div>
-
-      <div class="col-6" id="main_content">
-        <%= yield %>
-      </div>
-
-      <div class= "col-4" id="other_bar">
-      </div>
-    </div>  
     
+    <div class="main-content">
+      <div class="row">
+        <div class="col-2 filler">
+        </div>
+        <div class="col-7">
+          <%= yield %>
+        </div>
+        <div class="col-3 sidebar">
+          <%= render "layouts/sidebar" %>
+        </div>
+      </div>
+    </div>
+    
+    <%= render "layouts/footer" %>
   </body>
 </html>
