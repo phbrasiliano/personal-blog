@@ -1,6 +1,0 @@
-<% @posts.each do |post| %>
-	<div>
-		<h2 class="title"><%= link_to post.title, post %></h2>
-		<p class="date"><%= l post.created_at, format: ("%d de %B de %Y") %></p>
-	</div>
-<% end %>
