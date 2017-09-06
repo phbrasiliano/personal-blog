@@ -5,4 +5,7 @@ class Post < ApplicationRecord
 
   validates :title, presence: true, length:{ minimum: 5},  uniqueness: { case_sensitive: false}
   validates :body, presence: true
+
+  attr_accessor :tag_list
+  acts_as_taggable
 end
