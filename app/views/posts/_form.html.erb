@@ -19,19 +19,24 @@
   <% end %>
 
   <p>
-    <%= f.label "Título" %><br>
+    <%= f.label :title, "Título" %><br>
     <%= f.text_field :title %>
   </p>
 
   <p>
-    <%= f.label "Descrição" %><br>
+    <%= f.label :description, "Descrição" %><br>
     <p class="comment">(É recomendado escrever no máximo 150 caracteres)</p>
     <p id="characters">0</p>
     <%= f.text_area :description %>
   </p>
+  <p>
+    <%= f.label :tag_list, "Tags" %><br>
+    <p class="comment">(Separado por vírgulas)</p>
+    <%= f.text_area :tag_list %>
+  </p>
 
   <p>
-    <%= f.label "Texto" %><br>
+    <%= f.label :body, "Texto" %><br>
     <br>
     <%= f.cktext_area :body %>
   </p>
