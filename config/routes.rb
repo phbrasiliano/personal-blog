@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   root "posts#index"
 
   get '/sobre', to: 'pages#sobre'
+  get 'tags/:tag', to: 'posts#index', as: :tag
 end
