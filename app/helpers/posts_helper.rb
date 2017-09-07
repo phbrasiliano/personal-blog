@@ -4,4 +4,7 @@ module PostsHelper
     /<img.*?src=\"(.+?)\"/.match(post.body)[1] unless /<img.*?src=\"(.+?)\"/.match(post.body).nil?
   end
 
+  def display_tags(post)
+    raw post.tag_list.map { |t| link_to t, tag_path(t)}.join(', ')
+  end
 end
