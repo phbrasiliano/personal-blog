@@ -10,13 +10,13 @@
   <div class="row menu">
     <div class="col-2 filler">
     </div>
-    <div class="col-7 nav-bar">
+    <div class="col-6 nav-bar">
       <ul>
         <li><%= link_to "Blog", root_path %></li>
         <li><%= link_to "Sobre", sobre_path %></li>
       </ul>
     </div>
-    <div class="col-3 filler">
+    <div class="col-4 filler">
       <% if user_signed_in? %>
         <div class="dev-menu">
           <%= link_to "Novo Post", new_post_path, :class => "button" %>

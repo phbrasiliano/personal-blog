@@ -2,11 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.post-wrapper{
+.post-preview{
   background-color: white;
   padding: 1em;
   margin-bottom: 2em;
-  width: 800px;
 
   border-color: grey;
 
@@ -30,4 +29,10 @@
   .description {
     padding-left: 160px; 
   }
+}
+
+#post-content{
+  background-color: white;
+  padding: 1em;
+  
 }
