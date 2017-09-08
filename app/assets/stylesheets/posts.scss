@@ -2,3 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.post-wrapper{
+  background-color: white;
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 800px;
+
+  border-color: grey;
+
+  .date {
+    color: grey;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+
+  .crop {
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    float: left;
+    margin-right: 2em;
+    object-position: center;
+  }
+  
+
+  
+  .description {
+    padding-left: 160px; 
+  }
+}
