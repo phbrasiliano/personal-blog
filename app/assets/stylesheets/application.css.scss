@@ -145,11 +145,18 @@ body {
 }
 
 .col-sidebar {
+  .social {
+    margin-bottom: 1em;
+    padding: 1em;
+  }
   ul {
     list-style: none;
-    .category {
-      font-size: 1.5em;
-      text-transform: uppercase;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5em;
+    li {
+      display: inline-block;
+      color: green;
     }
   }
 }
