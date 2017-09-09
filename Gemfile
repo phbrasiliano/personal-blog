@@ -36,6 +36,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'faker',          '1.7.3'
 gem 'will_paginate',       '3.1.5'
 gem 'acts-as-taggable-on', '~> 4.0'
+gem 'font-awesome-sass'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
