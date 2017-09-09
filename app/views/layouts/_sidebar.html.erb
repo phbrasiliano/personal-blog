@@ -1,12 +1,22 @@
 <div class="social">
-  <h3>Contato:</h3>
+  <h4>Contatos</h4>
   <ul>
-    <li><a href="https://twitter.com/Phellpsbr"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-    <li><a href="gith"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-    <li><a href="mailto:phbrasiliano@gmail.com "><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+    <li>
+      <a href="https://twitter.com/Phellpsbr"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <div class="label">Twitter</div>
+      </li>
+    <li>
+      <a href="https://github.com/phbrasiliano"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+      <div class="label">GitHub</div>
+      </li>
+    <li>
+      <a href="mailto:phbrasiliano@gmail.com "><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+      <div class="label">Email</div>
+    </li>
   </ul>
 </div>
 <div id="tag_cloud">
+  <h4>Tags</h4>
   <% tag_cloud Post.tag_counts, %w[s, m, l] do |tag, css_class| %>
     <%= link_to tag.name, tag_path(tag.name), class: css_class %>
   <% end %>

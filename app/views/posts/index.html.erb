@@ -8,9 +8,9 @@
           <%= link_to image_tag(retrieve_photo(post)), post %>
         <% end %>
       </div>
-      <p class="description"><%= post.description %></p> 
+      <p class="description"><%= post.description %></p>
+      <%= link_to "Leia mais", post, class: "leia-mais"%>
 	  </div>
-    <p class="tags">Tags: <%= display_tags(post) %></p>
   </div>
 <% end %>
 
