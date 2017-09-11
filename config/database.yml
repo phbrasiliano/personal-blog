@@ -7,7 +7,7 @@
 default: &default
   adapter: sqlite3
   pool: 5
-  timeout: 500
+  timeout: 5000
 
 development:
   <<: *default
@@ -21,11 +21,11 @@ test:
   database: db/test.sqlite3
 
 # old db
-# production:
-#  <<: *default
-#  database: db/production.sqlite3
-
-production:  
+production:
+  <<: *default
+  database: db/production.sqlite3
+  adapter: postgresql
+#production:  
   #adapter: postgresql
-  url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
-  encoding: unicode
+#  url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
+#  encoding: unicode
