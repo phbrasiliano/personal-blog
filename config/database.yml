@@ -23,11 +23,10 @@ test:
 # old db
 production:
   <<: *default
-  database: db/production.sqlite3
   adapter: postgresql
   encoding: unicode
   url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
-  
+
 #production:  
   #adapter: postgresql
 #  url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
