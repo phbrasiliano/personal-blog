@@ -21,10 +21,4 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
-  database: <%= ENV['HOST'] %>
-  username: <%= ENV['DB_NAME'] %>
-  password: <%= ENV['DB_PASS'] %>
-  poll: 5
+  
