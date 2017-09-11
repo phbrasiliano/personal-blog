@@ -71,6 +71,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-  gem 'rails_12factor'
-  gem 'pg'
+  gem 'rails_12factor', group: :production #rails library tuned to run smoothly on Heroku/Dokku cloud infrastructures
+  gem 'pg' #postgres gem
 end
