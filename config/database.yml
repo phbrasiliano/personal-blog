@@ -22,7 +22,6 @@ test:
 
 # old db
 production:
-  <<: *default
   adapter: postgresql
   encoding: unicode
   url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
