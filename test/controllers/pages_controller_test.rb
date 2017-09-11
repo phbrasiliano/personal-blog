@@ -14,6 +14,6 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   test "should get 'sobre'" do
     get sobre_path
     assert_response :success
-    assert_select "title", "Sobre mim | #{@base_title}"
+    assert_select "title", "Sobre a Fábrica | #{@base_title}"
   end
 end
