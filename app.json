@@ -1,0 +1,14 @@
+{
+  "name": "groselha-factory",
+  "description": "App criado com ajuda do Tutorial do OneBitCode",
+  "keywords": [
+    "dokku",
+    "rails",
+    "http://onebitcode.com"
+  ],
+  "scripts": {
+    "dokku": {
+      "postdeploy": "bundle exec rake db:migrate"
+    }
+  }
+}

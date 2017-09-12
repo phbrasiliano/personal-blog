@@ -22,6 +22,8 @@ test:
 
 production:
   adapter: postgresql
-  url: <%= ENV['POSTGRESQL_URL'] %> #This is the environment variable created by our Dokku command earlier
   encoding: unicode
-  pool: 5
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: groselha-factory_production
+  username: groselha-factory
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
