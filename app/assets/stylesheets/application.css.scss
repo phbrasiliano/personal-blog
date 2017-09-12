@@ -86,9 +86,8 @@ body {
 
 .menu{
   background-color: #5675ba;
-  /* old color
-  #467aaf*/
   color: white;
+  height: 51px;
   
   .nav-bar {
     padding: 0;
@@ -117,31 +116,10 @@ body {
 
   .dev-menu {
     float: right;
-    margin-top: -6px;
-    .button {
-      font-size: .8em;
-      margin-left: .5em;
-      border-radius: 1.5em;
-      &:hover {
-        border: 1px solid #33acb7;
-      }
-    }
   }
 }
 
-.button {
-  outline: none;
-  background: transparent;
-  border: 1px solid #d6dce0;
-  padding: .5em 1.5em;
-  &:hover {
-    border: 1px solid #33acb7;
-    color: #33acb7;
-    a {
-      color: #33acb7 !important;
-    }
-  }
-}
+
 
 .alert {
   position: absolute;
@@ -185,7 +163,7 @@ body {
     position: absolute;
     width: 120px;
     color: white;
-    background-color: #5675ba;
+    background-color: #48639e;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -203,7 +181,7 @@ body {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #5675ba transparent;
+    border-color: transparent transparent #48639e transparent;
   }
 
   li:hover .label {
