@@ -54,11 +54,14 @@ body {
     padding: 15px;
     width: 100%;
 }
-.filler {
-  display: none;
+.col-main{
+  padding: 5px;
 }
 
-@media only screen and (min-width: 768px) {
+
+.filler {display: none;}
+
+@media only screen and (min-width: 1300px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -74,7 +77,7 @@ body {
     .col-12 {width: 100%;}
     .filler {display: block;}
     .col-main {width: 768px;}
-    .col-sidebar {width: 350px;}
+    .col-sidebar {width: 300px;}
 }
 
 
@@ -87,10 +90,11 @@ body {
 .menu{
   background-color: #5675ba;
   color: white;
-  height: 51px;
+  margin-bottom: 1.7em;
   
   .nav-bar {
     padding: 0;
+    height: 51px;
   }
   ul {
     list-style-type: none;
@@ -127,8 +131,6 @@ body {
 }
 
 .col-sidebar {
-  margin-top: 1.7em;
-  
   h4{
     text-align: center;
     font-size: 1.5em;
@@ -139,6 +141,7 @@ body {
   .social {
     margin-bottom: 1em;
     padding: 1em;
+    padding-top: 0;
     text-align: center;
   }
 
@@ -193,7 +196,6 @@ body {
 }
 
 #tag_cloud {
-
   a {
     color: white;
     background-color: #5675ba;
